@@ -1,0 +1,415 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.firstPage {
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    filter: saturate(2);
+}
+
+#logo {
+    position: relative;
+    left: 40px;
+    top: 30px;
+    height: 25px;
+    width: 150px;
+}
+
+.free-trial-btn {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 40px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+}
+.free-trial-btn:hover {
+    color: hsl(208, 11%, 55%);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    margin: 100px;
+}
+
+/* Left Content */
+.content {
+    max-width: 500px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    color: #000;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+.content p {
+    font-size: 1.1rem;
+    color: hsl(208, 11%, 55%);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #ff0099;
+    /* Pink background */
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e60087;
+
+}
+
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.container1 {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+
+}
+
+.card img {
+    max-width: 40%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #1a202c;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #4a5568;
+}
+
+.cta {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.cta button {
+    background-color: #ff007a;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta button:hover {
+    background-color: hsl(322, 100%, 66%);
+}
+
+footer {
+background: hsl(192, 100%, 9%);
+color: #fff;
+padding: 2rem 0;
+text-align: center;
+}
+
+.footer-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+gap: 2rem;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.contact-info {
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+max-width: 400px;
+width: 100%;
+}
+
+.contact-item {
+display: flex;
+align-items: center;
+max-width: 300px;
+width: 100%;
+}
+
+.contact-item img {
+width: 24px;
+height: auto;
+margin-right: 10px;
+}
+
+.contact-item p {
+font-size: 0.9rem;
+color: #ddd;
+line-height: 1.5;
+margin: 0;
+}
+
+.footer-links {
+display: flex;
+flex-wrap: wrap;
+gap: 2rem;
+}
+
+.footer-links div {
+display: flex;
+flex-direction: column;
+}
+
+.footer-links a {
+color: #ddd;
+text-decoration: none;
+font-size: 0.9rem;
+margin-bottom: 8px;
+}
+
+.footer-links a:hover {
+text-decoration: underline;
+}
+
+.social-icons {
+display: flex;
+justify-content: center;
+gap: 1rem;
+margin-top: 1rem;
+}
+
+.social-icons a {
+font-size: 2rem;
+color: #ddd;
+text-decoration: none;
+}
+
+.social-icons a:hover {
+opacity: 0.7;
+}
+
+.social-icons .fab {
+padding: 10px;
+border-radius: 50%;
+transition: background-color 0.3s ease;
+}
+
+.social-icons .fab:hover {
+color: hsl(322, 100%, 66%);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+.footer-container {
+flex-direction: column;
+text-align: center;
+}
+
+.contact-info {
+justify-content: center;
+}
+
+.contact-item {
+flex-direction: column;
+align-items: flex-start;
+margin-bottom: 1rem;
+}
+
+.footer-links {
+justify-content: center;
+text-align: center;
+}
+
+.footer-links div {
+margin-bottom: 1rem;
+}
+
+.social-icons {
+justify-content: center;
+margin-top: 1rem;
+}
+
+footer p {
+margin-top: 20px;
+font-size: 0.8rem;
+}
+@media (max-width: 1024px) {
+.container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2rem;
+}
+
+.content p {
+    font-size: 1rem;
+}
+
+.image img {
+    max-width: 80%;
+}
+
+.free-trial-btn {
+    font-size: 14px;
+    padding: 8px 30px;
+    top: 20px;
+    right: 20px;
+}
+}
+
+@media (max-width: 768px) {
+.container {
+    margin: 50px 20px;
+    padding: 20px;
+}
+
+.content h1 {
+    font-size: 1.8rem;
+}
+
+.content p {
+    font-size: 0.95rem;
+}
+
+.cta-button {
+    padding: 12px 25px;
+    font-size: 14px;
+}
+
+.firstPage {
+    background-size: contain;
+}
+}
+
+@media (max-width: 576px) {
+.container {
+    margin: 20px;
+    padding: 10px;
+}
+
+.content h1 {
+    font-size: 1.5rem;
+}
+
+.content p {
+    font-size: 0.85rem;
+}
+
+.cta-button {
+    padding: 10px 20px;
+    font-size: 12px;
+}
+
+.free-trial-btn {
+    font-size: 12px;
+    padding: 6px 20px;
+    top: 15px;
+    right: 15px;
+}
+
+.card {
+    flex-direction: column;
+    text-align: center;
+}
+
+.card img {
+    max-width: 70%;
+    margin: 0 auto 1rem;
+}
+
+footer .footer-container {
+    text-align: center;
+    flex-direction: column;
+}
+
+footer .contact-info {
+    justify-content: center;
+}
+
+footer .social-icons a {
+    font-size: 1.5rem;
+}
+}
+
+@media (max-width: 360px) {
+.content h1 {
+    font-size: 1.3rem;
+}
+
+.content p {
+    font-size: 0.8rem;
+}
+
+.cta-button {
+    padding: 8px 18px;
+    font-size: 10px;
+}
+
+.free-trial-btn {
+    font-size: 10px;
+    padding: 5px 15px;
+}
+
+footer p {
+    font-size: 0.7rem;
+}
+}
+}
